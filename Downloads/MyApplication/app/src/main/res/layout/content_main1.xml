@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:pew="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.rohitmapakshi.myapplication.PEWImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/about1"
+                    android:scaleType="centerCrop"
+                    pew:parallax_x="160dp"
+                    pew:parallax_y="160dp"
+                    pew:reverse="reverseBoth"
+                    />
+                <com.example.rohitmapakshi.myapplication.PEWTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="@string/about"
+                    android:textColor="@color/White"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    pew:parallax_x="160dp"
+                    pew:parallax_y="100dp"
+                    pew:reverse="reverseX"/>
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:text="@string/abouttext1"
+                android:textColor="@color/about"
+                android:textStyle="italic"
+                android:background="@drawable/drawer_item"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abouttext2"
+                android:textColor="@color/about"
+                android:textStyle="italic"
+                android:background="@drawable/drawer_item"
+                />
+
+            <com.example.rohitmapakshi.myapplication.PEWImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/about2"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageView"
+                pew:parallax_x="160dp"
+                pew:parallax_y="160dp"
+                pew:reverse="reverseBoth" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abouttext3"
+                android:textColor="@color/about"
+                android:textStyle="italic"
+                android:background="@drawable/drawer_item"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
